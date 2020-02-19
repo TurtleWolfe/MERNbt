@@ -26,7 +26,7 @@ const app = express();
 //     });
 // }
 app.get('/', (req, res) => {
-    res.send('appy appy appy');
+    // res.send('appy appy appy');
     res.send('API for you');
 });
 const PORT = process.env.PORT || 5000;
