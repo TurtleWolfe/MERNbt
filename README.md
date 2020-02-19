@@ -20,22 +20,28 @@ Initizialize a git repo
 git init
 ```
 
-Initizialize a NodeJS project (by creating a package.json file)
+create a `package.json` file by Initizializing a NodeJS project
 
 ```bash
 npm init
 ```
 
-Install the `dependencies` (by adding them to the package.json file)
+Install the `dependencies` (by adding them to the `package.json` file)
 
 ```bash
 npm i bcryptjs client config express express-validator gravatar jsonwebtoken mongoose normalize-url request
 ```
 
-Install the `developement dependencies` (by adding them to the package.json file)
+Install the `developement dependencies` (by adding them to the `package.json` file)
 
 ```bash
 npm i -D nodemon concurrently
+```
+
+finish the installation by reading the `package.json` file
+
+```bash
+npm install
 ```
 
 add `start` and `server` scripts in
@@ -43,10 +49,11 @@ add `start` and `server` scripts in
 > `package.json`
 
 ```bash
-    "scripts": {
+  "scripts": {
     "start": "node server",
     "server": "nodemon server",
-     },
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
 ```
 
 (in the last file, build the server)
