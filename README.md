@@ -93,6 +93,16 @@ git push -u origin master
 
 ---
 
+## 7. Connecting To MongoDB With Mongoose
+
+create 2 empty files in `config/`
+
+```bash
+mkdir config
+cd config
+touch default.json db.js
+```
+
 ---
 
 ---
