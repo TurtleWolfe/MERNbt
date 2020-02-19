@@ -26,7 +26,7 @@ create a `package.json` file by Initizializing a NodeJS project
 npm init
 ```
 
-Install the `dependencies` (by adding them to the `package.json` file)
+Install the `dependencies` (by adding them to the _`package.json`_ file)
 
 ```bash
 npm i bcryptjs client config express express-validator gravatar jsonwebtoken mongoose normalize-url request
@@ -46,9 +46,9 @@ npm install
 
 add `start` and `server` scripts in
 
-> `package.json`
+> **`package.json`**
 
-```bash
+```json
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
@@ -60,14 +60,14 @@ add `start` and `server` scripts in
 
 > **`server.js`**
 
-```bash
+```js
 const express = require('express');
 
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('appy appy appy');
-    res.send('API for you');
+  res.send('appy appy appy');
+  res.send('API for you');
 });
 
 const PORT = process.env.PORT || 5000;
@@ -83,7 +83,7 @@ npm run server
 
 then stop it with **CNTRL C**
 
-and push it to Git Hub
+and push it to **`Git Hub`**
 
 ```bash
 git commit -m "first commit"
@@ -95,7 +95,7 @@ git push -u origin master
 
 ## 7. Connecting To MongoDB With Mongoose
 
-create 2 empty files in `config/`
+create 2 empty files in **`config/`**
 
 ```bash
 mkdir config
@@ -104,6 +104,32 @@ touch default.json db.js
 ```
 
 ---
+
+## 8. Route Files With Express Router
+
+create 4 empty files in **`routes/api/`**
+
+```bash
+mkdir routes/api
+cd routes/api
+touch auth.js posts.js profile.js users.js
+```
+
+> **`routes/api/users.js`**
+
+```js
+const express = require('express');
+const router = express.Router();
+
+// @route    POST api/users
+// @desc     Register user
+// @access   Public
+router.get('/', (req, res) => {
+  res.send('User Route');
+});
+
+module.exports = router;
+```
 
 ---
 
