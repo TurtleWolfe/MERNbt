@@ -38,11 +38,11 @@ Install the `developement dependencies` (by adding them to the `package.json` fi
 npm i -D nodemon concurrently
 ```
 
-finish the installation by reading the `package.json` file
+<!-- finish the installation by reading the `package.json` file
 
 ```bash
 npm install
-```
+``` -->
 
 add `start` and `server` scripts in
 
